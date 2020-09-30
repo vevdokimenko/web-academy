@@ -1,0 +1,18 @@
+.navbar {
+  background: red ;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+
+.navbar__wrapper {
+  max-width: 960px;
+  width: 100%;
+  border: 1px solid aqua;
+}
+
+.navbar__content {
+  display: flex;
+  align-content: center;
+}

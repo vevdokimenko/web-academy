@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        position: static;
+        top: initial;
+        left: initial;
+        transform: translate(0, 0);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .card {
+        flex-basis: 50%;
+    }
+
+    .w-2, .w-3, .card:last-of-type {
+        flex-basis: 100%;
+    }
+}

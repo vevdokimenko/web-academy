@@ -1,0 +1,66 @@
+@import "variables";
+
+@media screen and (max-width: 768px) {
+  .navbar {
+
+    &__wrapper {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+
+    &__wrapper {
+      justify-content: flex-end;
+    }
+
+    &__content {
+      position: fixed;
+      width: 325px;
+      top: 0;
+      left: 0;
+      height: calc(100vh - #{$navbarHeight});
+      margin-top: $navbarHeight;
+      background: #474646;
+      flex-direction: column;
+      padding-top: 30px;
+      font-size: 18px;
+      transform: translateX(-100%);
+      visibility: hidden;
+      transition: all .3s;
+    }
+
+    .expand {
+      transform: translateX(0);
+      visibility: visible;
+    }
+
+    &__item {
+      padding: 7px 35px;
+    }
+
+    &__item:last-child {
+      border-top: 1px solid #FFFFFF;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      font-size: 22px;
+      padding: 16px 35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__item:last-child:after {
+      content: url("../img/star.png");
+    }
+
+    &__toggle {
+      visibility: visible;
+      opacity: 100%;
+      margin-right: 20px;
+    }
+  }
+}

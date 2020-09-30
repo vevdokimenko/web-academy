@@ -1,0 +1,273 @@
+.brd {
+    border: 1px solid red;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    max-width: 1220px;
+    width: 100%;
+}
+
+.nav {
+    height: var(--nav-height);
+    background: #1B1B1B;
+}
+
+.nav__wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav__item {
+    margin: 0 12px;
+    display: flex;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.header__wrapper {
+    background: url("../img/main-pic.png") no-repeat center;
+    background-size: cover;
+    height: 1168px;
+    width: 100%;
+}
+
+.booking {
+    background: #FFFFFF;
+    box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding: 24px 32px;
+    width: 441px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.booking__title {
+    font-size: 30px;
+    font-weight: 400;
+    flex-basis: 100%;
+}
+
+.booking__field-label {
+    font-size: 0.75rem;
+    margin: 24px 0 10px 0;
+}
+
+.booking__field {
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    height: 48px;
+    flex-basis: 100%;
+    padding-left: 0.75rem;
+}
+
+.w-50 {
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+
+.w-100 {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.booking__button {
+    width: 153px;
+    height: 48px;
+    background: #FF5A5F;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.booking__button:hover {
+    background: #d74d51;
+}
+
+.section__header {
+    margin-top: 3.75rem;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.section__description {
+    position: relative;
+    margin-top: 0.375rem;
+}
+
+.section__banner {
+    background: url("../img/section-banner.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.section__banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__banner-link {
+    width: 174px;
+    height: 46px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+    color: #484848;
+    margin-top: 30px;
+    position: relative;
+}
+
+.section__banner-link:hover {
+    background: #FF5A5F;
+    color: #ffffff;
+}
+
+.sticker-gt {
+    position: relative;
+}
+
+.sticker-gt:after {
+    content: ' >';
+    font-size: 1rem;
+    position: absolute;
+    right: -1rem;
+    top: 50%;
+    transform: scaleY(1.5) translateY(-45%);
+}
+
+.section__cards {
+    margin-top: 3.75rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card {
+    background: #ffffff;
+    filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.14));
+    width: calc(25% - 20px);
+    margin-bottom: 26px;
+}
+
+.world {
+    filter: none;
+    color: #222222;
+    margin: 0;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__content {
+    padding: 19px;
+    position: relative;
+}
+
+.world__content {
+    padding: 19px 0;
+}
+
+.card__content-title {
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.card__content-rating {
+    position: absolute;
+    top: 13px;
+    right: 19px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.card__content-desc {
+    margin: 11px 0;
+}
+
+.card__content-button {
+    width: 100%;
+    height: 40px;
+    background: #18C6D1;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__content-button:hover {
+    background: #14D081;
+}
+
+.card__content-title-sm {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #717171;
+    display: flex;
+    line-height: 1.6rem;
+}
+
+.sticker-super:before {
+    content: 'СУПЕР-ХОЗЯИН';
+    font-size: 0.75rem;
+    color: #222222;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    width: 125px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+}
+
+.card__content-rating-sm {
+    font-size: 0.8125rem;
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+
+.card__content-rating-sm:before {
+    content: url("../img/star.png");
+    position: relative;
+    left: -5px;
+    top: 5px;
+}
+
+.footer {
+    border-top: 1px solid #EBEBEB;
+    margin-top: 40px;
+}

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+body {
+    background-image:
+            url("./img/45d10e_8b6ac011530347fbbb1ed0d0d1d4fb24_mv2 1.png");
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 537px;
+    text-align: center;
+    margin-top: 17%;
+    position: relative;
+}
+
+.title {
+    font-size: 90px;
+    line-height: 103px;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    font-size: 1rem;
+    margin-top: 61px;
+}
+
+.btn {
+    width: 268px;
+    height: 57px;
+    color: #FFFFFF;
+    font-size: 23px;
+    background: #47FCC0;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.footer {
+    font-size: 1rem;
+    width: 100%;
+    position: absolute;
+    bottom: 55px;
+    text-align: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* rectangles */
+.rectangle {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-position: center;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.orange {
+    top: -60px;
+    left: -60px;
+    background: url("./img/4.png");
+}
+
+.magenta {
+    top: -120px;
+    right: -60px;
+    background: url("./img/2.png");
+}
+
+.yellow {
+    bottom: -90px;
+    left: -120px;
+    background: url("./img/3.png");
+}
+
+.pink {
+    bottom: -120px;
+    right: -120px;
+    background: url("./img/1.png");
+}

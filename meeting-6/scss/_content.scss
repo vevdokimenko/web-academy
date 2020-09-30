@@ -1,0 +1,41 @@
+@import "./variables";
+
+.navbar {
+  background: #050505;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: $navbarHeight;
+
+  &__wrapper {
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    display: flex;
+    position: relative;
+  }
+
+  &__item {
+    padding: 0 20px;
+  }
+
+  &__link {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  &__toggle {
+    visibility: hidden;
+    opacity: 0;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #FFFFFF;
+    background: none;
+    border-radius: 5px;
+  }
+}

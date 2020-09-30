@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: #E7FFA4;
+}
+
+a {
+    text-decoration: none;
+    color: #3899EC;
+}
+
+.sign-up-form {
+    margin: 117px auto;
+    width: 416px;
+    height: 478px;
+    background: #ffffff;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    padding: 31px 44px;
+}
+
+.logo {
+    margin-top: 14px;
+}
+
+.form-field {
+    height: 44px;
+    width: 100%;
+    background: #F3F3F3;
+    border: 1px solid #DCDCDC;
+    border-radius: 34px;
+    padding-left: 17px;
+    margin-top: 14px;
+}
+
+.form-field:first-of-type {
+    margin-top: 43px;
+}
+
+.form-field:focus, .form-field:hover {
+    background: #FFFFFF;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #3899EC;
+    border-radius: 34px;
+    color: #3899EC;
+    margin-top: 41px;
+    font-size: 14px;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    background: #eaf6fe;
+}
+
+.btn-submit:focus {
+    background: #3899EC;
+    color: #ffffff;
+}
+
+.form-text {
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.form-text:first-of-type {
+    margin-top: 28px;
+}
