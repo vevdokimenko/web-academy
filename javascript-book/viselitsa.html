@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Виселица!</title>
+</head>
+<body>
+<h1>Виселица!</h1>
+<script>
+    // Создаем массив со словами
+    const words = [
+        "программа",
+        "макака",
+        "прекрасный",
+        "оладушек",
+        "динозавр",
+        "телефон",
+        "кружка"
+    ];
+    // Выбираем случайное слово
+    const word = words[Math.floor(Math.random() * words.length)];
+    // Создаем итоговый массив
+    const answerArray = [];
+    for (let i = 0; i < word.length; i++) {
+        answerArray[i] = "_";
+    }
+    let remainingLetters = word.length;
+    let attempts = remainingLetters - 2;
+    let guess;
+    // Игровой цикл
+    while (remainingLetters > 0 && attempts > 0) {
+        // Показываем состояние игры
+        alert(answerArray.join(" "));
+
+        // Запрашиваем вариант ответа
+        guess = prompt("Угадайте букву, или нажмите Отмена для выхода из игры.");
+        if (guess === null) {
+            // Выходим из игрового цикла
+            break;
+        } else if (guess.length !== 1) {
+            alert("Пожалуйста, введите одиночную букву.");
+        } else {
+            // Обновляем состояние игры
+            guess = guess.toLowerCase();
+            for (let j = 0; j < word.length; j++) {
+                if (word[j] === guess && answerArray[j] === '_') {
+                    answerArray[j] = guess;
+                    remainingLetters--;
+                    attempts--;
+                }
+            }
+        }
+        // Конец игрового цикла
+    }
+    // Отображаем ответ и поздравляем игрока
+    (guess) ? alert("Отлично! Было загадано слово \n" + word) : alert("Игра окончена.");
+</script>
+</body>
+</html>
