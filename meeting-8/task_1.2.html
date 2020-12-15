@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * @param {Array} массив с разными значениями и типами
+       * @return {Array<number>} возвращает массив с числами из исходного
+       */
+      function findNumbers(arrayWithStringsAndNumbers) {
+        const onlyNumbers = [];
+        arrayWithStringsAndNumbers.forEach((element) => {
+          if (typeof element === "number") {
+            onlyNumbers.push(element);
+          }
+        });
+        return onlyNumbers;
+      }
+
+      function findNumbers2(arrayWithStringsAndNumbers) {
+        return arrayWithStringsAndNumbers.filter(
+          (item) => typeof item === "number"
+        );
+      }
+
+      const onlyNumbers = findNumbers2([
+        "asd",
+        1,
+        true,
+        2,
+        3,
+        {},
+        "b",
+        "sadasd",
+        4,
+      ]); // результат должен быть [123,2,3, 4]
+    </script>
+  </body>
+</html>
