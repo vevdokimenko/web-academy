@@ -1,5 +1,5 @@
-import { toggleColor } from './components/lighter/lighter.js';
-import './components/slideShow/slideShow.js';
-toggleColor(document.querySelectorAll('.circle'));
+import { toggleColor } from "./components/lighter/lighter.js";
+import "./components/slideShow/slideShow.js";
+toggleColor();
 
-// setInterval(test, 1500); // callback function
+//setInterval(toggleColor, 1500); // callback function
