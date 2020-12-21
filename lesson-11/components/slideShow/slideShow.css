@@ -1,4 +1,4 @@
-[class*='slide-show'] {
+[class*="slide-show"] {
   box-sizing: border-box;
 }
 
@@ -6,7 +6,6 @@
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  border: 2px solid green;
 }
 
 .slide-show__slides {
@@ -15,7 +14,6 @@
   margin: 0;
   position: relative;
   display: flex;
-  border: 2px solid red;
 }
 
 .slide-show__img {
@@ -25,7 +23,6 @@
 
 .slide-show__slide {
   width: 100%;
-  border: 1px solid blue;
 }
 .slide-show__slide {
   flex-shrink: 0;

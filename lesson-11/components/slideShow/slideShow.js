@@ -1,15 +1,15 @@
-const slideShow = document.querySelector('.slide-show');
-const slides = document.querySelectorAll('.slide-show__slide');
-const [prevBtn, nextBtn] = document.querySelectorAll('.slide-show__control');
-console.log(prevBtn, nextBtn);
+const slideShow = document.querySelector(".slide-show");
+const slides = document.querySelectorAll(".slide-show__slide");
+const [prevBtn, nextBtn] = document.querySelectorAll(".slide-show__control");
+//console.log(prevBtn, nextBtn);
 let intervalId;
 let activeSlideIndex = 0;
 
 const showSlide = () => {
-  slides[activeSlideIndex].classList.add('active');
+  slides[activeSlideIndex].classList.add("active");
 };
 const hideSlide = () => {
-  slides[activeSlideIndex].classList.remove('active');
+  slides[activeSlideIndex].classList.remove("active");
 };
 
 const decreaseIndex = () => {
@@ -18,7 +18,7 @@ const decreaseIndex = () => {
   } else {
     activeSlideIndex -= 1;
   }
-  console.log(activeSlideIndex);
+  //console.log(activeSlideIndex);
 };
 
 const increaseIndex = () => {
@@ -27,7 +27,7 @@ const increaseIndex = () => {
   } else {
     activeSlideIndex = 0;
   }
-  console.log(activeSlideIndex);
+  //console.log(activeSlideIndex);
 };
 
 const showPrev = () => {
@@ -54,12 +54,12 @@ showSlide();
 startSlideshow();
 4;
 
-slideShow.addEventListener('mouseenter', () => {
+slideShow.addEventListener("mouseenter", () => {
   stopSlideshow();
 });
 
-slideShow.addEventListener('mouseleave', () => {
+slideShow.addEventListener("mouseleave", () => {
   startSlideshow();
 });
-prevBtn.addEventListener('click', showPrev);
-nextBtn.addEventListener('click', showNext);
+prevBtn.addEventListener("click", showPrev);
+nextBtn.addEventListener("click", showNext);
