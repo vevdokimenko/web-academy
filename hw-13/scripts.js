@@ -1,3 +1,3 @@
-import { createGrid } from './adsListController.js';
+import { createGrid } from "./adsListController.js";
 
 createGrid();
