@@ -2,7 +2,13 @@
   width: 100%;
   position: relative;
   padding: 19px;
-
+  height: 100%;
+  border: 1px solid rgba(240, 240, 240, 1);
+  &:hover {
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.5);
+    border: 0;
+    cursor: pointer;
+  }
   &__pic {
     position: relative;
     padding: 0;

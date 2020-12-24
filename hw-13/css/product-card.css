@@ -2,6 +2,13 @@
   width: 100%;
   position: relative;
   padding: 19px;
+  height: 100%;
+  border: 1px solid #f0f0f0;
+}
+.product-card:hover {
+  box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.5);
+  border: 0;
+  cursor: pointer;
 }
 .product-card__pic {
   position: relative;
