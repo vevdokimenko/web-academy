@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  color: #3f3f3f;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 30px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+li:nth-child(even) {
+  margin-left: 20px;
+}
