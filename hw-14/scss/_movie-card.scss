@@ -1,0 +1,99 @@
+.movie-card {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+  &__pic {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+  }
+  &__content {
+    width: 100%;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(196, 196, 196, 0.21);
+    color: #ffffff;
+    overflow: hidden;
+    padding: 16px;
+  }
+  &__pic {
+    &:hover {
+      .movie-card {
+        &__description {
+          height: inherit;
+          transition: all 0.2s;
+        }
+        &__shadow {
+          visibility: visible;
+        }
+      }
+    }
+  }
+  &__title {
+    font-size: 1.8rem;
+  }
+  &__sale::before {
+    content: "sale";
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__sale {
+    background-color: #ff0000;
+    height: 8%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-25%, 50%) rotate(-45deg);
+    z-index: 1;
+  }
+  &__rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #ff8a00;
+  }
+  &__buy {
+    width: 100%;
+    height: 53px;
+    background: #11880e;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 16px;
+    z-index: 1;
+  }
+  &__buy:hover {
+    cursor: pointer;
+    background: #13a310;
+    transition: all 0.2s;
+  }
+  &__description {
+    height: 0;
+    overflow: hidden;
+  }
+  &__shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+  }
+}

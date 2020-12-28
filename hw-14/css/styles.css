@@ -1,0 +1,631 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+body {
+  background: #ffffff;
+}
+
+.content-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+
+  .content {
+    padding-top: 60px;
+  }
+}
+[class*=col-] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 0.312rem 0.312rem;
+  position: relative;
+  min-height: 1px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  word-break: break-word;
+}
+
+.col-1 {
+  flex-basis: 8.3333333333%;
+  width: 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+
+.col-2 {
+  flex-basis: 16.6666666667%;
+  width: 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.col-3 {
+  flex-basis: 25%;
+  width: 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex-basis: 33.3333333333%;
+  width: 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.col-5 {
+  flex-basis: 41.6666666667%;
+  width: 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.col-6 {
+  flex-basis: 50%;
+  width: 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex-basis: 58.3333333333%;
+  width: 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.col-8 {
+  flex-basis: 66.6666666667%;
+  width: 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.col-9 {
+  flex-basis: 75%;
+  width: 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex-basis: 83.3333333333%;
+  width: 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+
+.col-11 {
+  flex-basis: 91.6666666667%;
+  width: 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+
+.col-12 {
+  flex-basis: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .col-lg-1 {
+    flex-basis: 8.3333333333%;
+    width: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+
+  .col-lg-2 {
+    flex-basis: 16.6666666667%;
+    width: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+
+  .col-lg-3 {
+    flex-basis: 25%;
+    width: 25%;
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    flex-basis: 33.3333333333%;
+    width: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .col-lg-5 {
+    flex-basis: 41.6666666667%;
+    width: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+
+  .col-lg-6 {
+    flex-basis: 50%;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-7 {
+    flex-basis: 58.3333333333%;
+    width: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  .col-lg-8 {
+    flex-basis: 66.6666666667%;
+    width: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .col-lg-9 {
+    flex-basis: 75%;
+    width: 75%;
+    max-width: 75%;
+  }
+
+  .col-lg-10 {
+    flex-basis: 83.3333333333%;
+    width: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+
+  .col-lg-11 {
+    flex-basis: 91.6666666667%;
+    width: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+
+  .col-lg-12 {
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .col-md-1 {
+    flex-basis: 8.3333333333%;
+    width: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+
+  .col-md-2 {
+    flex-basis: 16.6666666667%;
+    width: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+
+  .col-md-3 {
+    flex-basis: 25%;
+    width: 25%;
+    max-width: 25%;
+  }
+
+  .col-md-4 {
+    flex-basis: 33.3333333333%;
+    width: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .col-md-5 {
+    flex-basis: 41.6666666667%;
+    width: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+
+  .col-md-6 {
+    flex-basis: 50%;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .col-md-7 {
+    flex-basis: 58.3333333333%;
+    width: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  .col-md-8 {
+    flex-basis: 66.6666666667%;
+    width: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .col-md-9 {
+    flex-basis: 75%;
+    width: 75%;
+    max-width: 75%;
+  }
+
+  .col-md-10 {
+    flex-basis: 83.3333333333%;
+    width: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+
+  .col-md-11 {
+    flex-basis: 91.6666666667%;
+    width: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+
+  .col-md-12 {
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .col-sm-1 {
+    flex-basis: 8.3333333333%;
+    width: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+
+  .col-sm-2 {
+    flex-basis: 16.6666666667%;
+    width: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+
+  .col-sm-3 {
+    flex-basis: 25%;
+    width: 25%;
+    max-width: 25%;
+  }
+
+  .col-sm-4 {
+    flex-basis: 33.3333333333%;
+    width: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .col-sm-5 {
+    flex-basis: 41.6666666667%;
+    width: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+
+  .col-sm-6 {
+    flex-basis: 50%;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .col-sm-7 {
+    flex-basis: 58.3333333333%;
+    width: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  .col-sm-8 {
+    flex-basis: 66.6666666667%;
+    width: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .col-sm-9 {
+    flex-basis: 75%;
+    width: 75%;
+    max-width: 75%;
+  }
+
+  .col-sm-10 {
+    flex-basis: 83.3333333333%;
+    width: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+
+  .col-sm-11 {
+    flex-basis: 91.6666666667%;
+    width: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+
+  .col-sm-12 {
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 574px) {
+  .col-xs-1 {
+    flex-basis: 8.3333333333%;
+    width: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+
+  .col-xs-2 {
+    flex-basis: 16.6666666667%;
+    width: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+
+  .col-xs-3 {
+    flex-basis: 25%;
+    width: 25%;
+    max-width: 25%;
+  }
+
+  .col-xs-4 {
+    flex-basis: 33.3333333333%;
+    width: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .col-xs-5 {
+    flex-basis: 41.6666666667%;
+    width: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+
+  .col-xs-6 {
+    flex-basis: 50%;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .col-xs-7 {
+    flex-basis: 58.3333333333%;
+    width: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  .col-xs-8 {
+    flex-basis: 66.6666666667%;
+    width: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .col-xs-9 {
+    flex-basis: 75%;
+    width: 75%;
+    max-width: 75%;
+  }
+
+  .col-xs-10 {
+    flex-basis: 83.3333333333%;
+    width: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+
+  .col-xs-11 {
+    flex-basis: 91.6666666667%;
+    width: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+
+  .col-xs-12 {
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.global-header {
+  background: #1b1b1b;
+  height: 60px;
+}
+.global-header__content {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar__toggle {
+  display: none;
+  position: relative;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+}
+.navbar__toggle::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  transition: all 0.1s;
+  top: calc(33.3333% - 2px);
+}
+.navbar__toggle::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  transition: all 0.1s;
+  bottom: calc(33.3333% - 2px);
+}
+.navbar__menu {
+  display: flex;
+}
+.navbar__item {
+  display: flex;
+  align-items: stretch;
+  margin-left: 23px;
+}
+.navbar__link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar__link:hover {
+  color: red;
+}
+
+@media screen and (max-width: 767px) {
+  .global-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .navbar {
+    align-items: center;
+  }
+  .navbar__toggle {
+    display: block;
+  }
+  .navbar__menu {
+    height: calc(100vh - 60px);
+    background-color: #242424;
+    position: absolute;
+    width: 250px;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: all 0.2s;
+  }
+  .navbar__item {
+    padding: 15px 0;
+    margin: 0;
+  }
+  .navbar_active .navbar__menu {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  .navbar_active .navbar__toggle::after {
+    top: calc(50% - 1px);
+    transform: rotate(45deg);
+  }
+  .navbar_active .navbar__toggle::before {
+    bottom: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+}
+.movie-card {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.movie-card:hover {
+  cursor: pointer;
+}
+.movie-card__pic {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.movie-card__img {
+  display: block;
+  width: 100%;
+}
+.movie-card__content {
+  width: 100%;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(196, 196, 196, 0.21);
+  color: #ffffff;
+  overflow: hidden;
+  padding: 16px;
+}
+.movie-card__pic:hover .movie-card__description {
+  height: inherit;
+  transition: all 0.2s;
+}
+.movie-card__pic:hover .movie-card__shadow {
+  visibility: visible;
+}
+.movie-card__title {
+  font-size: 1.8rem;
+}
+.movie-card__sale::before {
+  content: "sale";
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.movie-card__sale {
+  background-color: #ff0000;
+  height: 8%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-25%, 50%) rotate(-45deg);
+  z-index: 1;
+}
+.movie-card__rating {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ff8a00;
+}
+.movie-card__buy {
+  width: 100%;
+  height: 53px;
+  background: #11880e;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 16px;
+  z-index: 1;
+}
+.movie-card__buy:hover {
+  cursor: pointer;
+  background: #13a310;
+  transition: all 0.2s;
+}
+.movie-card__description {
+  height: 0;
+  overflow: hidden;
+}
+.movie-card__shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */

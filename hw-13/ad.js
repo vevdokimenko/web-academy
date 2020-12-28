@@ -1,6 +1,6 @@
 const createAd = (arrItem) => {
   // const { id, media, title, price } = product;
-  console.log(arrItem.id);
+
   return `
     <div class="col-3 col-md-4 col-sm-6 col-xs-12">
       <div class="product-card" id="${arrItem.id}">
