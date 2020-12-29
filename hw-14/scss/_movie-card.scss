@@ -32,8 +32,7 @@
     &:hover {
       .movie-card {
         &__description {
-          height: inherit;
-          transition: all 0.2s;
+          max-height: 100px;
         }
         &__shadow {
           visibility: visible;
@@ -86,8 +85,10 @@
     transition: all 0.2s;
   }
   &__description {
-    height: 0;
+    height: auto;
+    max-height: 0px;
     overflow: hidden;
+    transition: max-height 0.2s;
   }
   &__shadow {
     position: absolute;
