@@ -35,14 +35,23 @@ button {
 a {
   text-decoration: none;
 }
-
+.wrapper {
+  width: 70vw;
+  height: 70vh;
+  margin: 0 auto;
+}
 .container {
   padding: 30px;
+  display: flex;
 }
 
 .link:hover {
   text-decoration: underline;
 }
-li:nth-child(even) {
+.lessons > li:nth-child(even) {
   margin-left: 20px;
+}
+
+.column {
+  flex: 1;
 }
