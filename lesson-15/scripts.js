@@ -1,3 +1,5 @@
-import { CommentsPage } from './comments-page.js';
+import { CommentsPage } from "./comments-page.js";
 
-const page = new CommentsPage(document.querySelector('main'));
+window.serverUrl = "https://boring-fe.herokuapp.com/";
+
+const page = new CommentsPage(document.querySelector("main"));

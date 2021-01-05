@@ -51,10 +51,10 @@ export class AddCommentForm {
   }
 
   render() {
-    this.formElement = document.createElement('form');
-    this.formElement.classList.add('add-comment-form');
+    this.formElement = document.createElement("form");
+    this.formElement.classList.add("add-comment-form");
     this.formElement.innerHTML = formChildrenTemplate;
-    this.formElement.addEventListener('submit', (e) => this.sendData(e));
+    this.formElement.addEventListener("submit", (e) => this.sendData(e));
     this.root.append(this.formElement);
   }
 
@@ -62,13 +62,13 @@ export class AddCommentForm {
     e.preventDefault(); // !!!!!!!!!!
     console.log(this);
     const formData = new FormData(this.formElement);
-    fetch('http://localhost:4000/comments', {
-      method: 'POST',
+    fetch(window.serverUrl + "comments", {
+      method: "POST",
       body: formData,
     })
       .then((resp) => resp.json())
       .then((data) => {
-        console.log('INSIDE FORM', data);
+        console.log("INSIDE FORM", data);
         this.onSuccessCallback(data);
       });
     // for (let entry of formData.entries()) {
