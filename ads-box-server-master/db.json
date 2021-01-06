@@ -45,28 +45,12 @@
       "id": 1
     },
     {
-      "author": "sdasd",
-      "title": "asdasd",
-      "text": "asdasdads",
-      "createdAt": 1609869827570,
-      "avatarUrl": "images/default-avatar.png",
+      "author": "Vlad",
+      "title": "Test Title",
+      "text": "test message",
+      "createdAt": 1609969597170,
+      "avatarUrl": "images/1609969597165-Feature_RightsofNature_inline2.jpg",
       "id": 2
-    },
-    {
-      "author": "",
-      "title": "",
-      "text": "",
-      "createdAt": 1609870901250,
-      "avatarUrl": "images/default-avatar.png",
-      "id": 3
-    },
-    {
-      "author": "Hello",
-      "title": "hello",
-      "text": "hello",
-      "createdAt": 1609870916536,
-      "avatarUrl": "images/default-avatar.png",
-      "id": 4
     }
   ],
   "movies": [

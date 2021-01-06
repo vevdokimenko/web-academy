@@ -40,9 +40,10 @@ const formChildrenTemplate = `
 `;
 
 export class AddCommentForm {
-  constructor(root, onSuccessCallback) {
+  constructor(root, url, onSuccessCallback) {
     this.root = root;
     this.onSuccessCallback = onSuccessCallback;
+    this.url = url;
     this.init();
   }
 
@@ -51,10 +52,10 @@ export class AddCommentForm {
   }
 
   render() {
-    this.formElement = document.createElement("form");
-    this.formElement.classList.add("add-comment-form");
+    this.formElement = document.createElement('form');
+    this.formElement.classList.add('add-comment-form');
     this.formElement.innerHTML = formChildrenTemplate;
-    this.formElement.addEventListener("submit", (e) => this.sendData(e));
+    this.formElement.addEventListener('submit', (e) => this.sendData(e));
     this.root.append(this.formElement);
   }
 
@@ -62,32 +63,14 @@ export class AddCommentForm {
     e.preventDefault(); // !!!!!!!!!!
     console.log(this);
     const formData = new FormData(this.formElement);
-    fetch("http://localhost:4000/comments", {
-      method: "POST",
+    fetch(this.url, {
+      method: 'POST',
       body: formData,
     })
-      .then((resp) => {
-        resp.json();
-      })
+      .then((resp) => resp.json())
       .then((data) => {
-        console.log("INSIDE FORM", data);
+        console.log('INSIDE FORM', data);
         this.onSuccessCallback(data);
-      })
-      .catch((e) => {
-        console.error(e);
       });
-    // for (let entry of formData.entries()) {
-    //   console.log(entry);
-    // }
-    // JSON
-    // const author = this.formElement[0].value;
-    // const text = this.formElement[1].value;
-    // console.log(author);
-    // const requestData = {
-    //   author,
-    //   text,
-    // };
-
-    // console.log(requestData);
   }
 }

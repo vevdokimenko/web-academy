@@ -20,7 +20,7 @@ export class CommentItem {
       <h2 class="comment__title">${this.data.title}</h2>
       <p class="comment__text">${this.data.text}</p>
       <div class="comment__author">${this.data.author}</div>
-      <img src="${window.serverUrl}/${this.data.avatarUrl}" class="comment__avatar"/>
+      <img src="http://localhost:4000/${this.data.avatarUrl}" class="comment__avatar"/>
     `;
     this.root.append(this.domElement);
   }

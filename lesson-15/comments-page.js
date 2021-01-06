@@ -22,7 +22,7 @@ export class CommentsPage {
   }
 
   fetchData() {
-    fetch(window.serverUrl + "comments")
+    fetch("http://localhost:4000/comments")
       .then((res) => res.json())
       .then((comments) => {
         console.log(">>>>>", comments);
