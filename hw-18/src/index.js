@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Meal } from "./components/meal";
+import { Meal } from "./components/meal/meal";
 import "./base.scss";
 import "./index.scss";
 
