@@ -1,0 +1,18 @@
+.meal {
+  margin: 20px 0;
+  &__row {
+    display: flex;
+  }
+  &__column {
+    flex: 2;
+    margin-left: 4%;
+    position: relative;
+  }
+  &__column.left {
+    flex: 1;
+    margin: 0;
+  }
+  &__ingredients {
+    list-style: circle inside;
+  }
+}
