@@ -51,13 +51,20 @@ export class Meal extends React.Component {
   }
 
   fetchData() {
-    fetch("https://www.themealdb.com/api/json/v1/1/random.php")
-      .then((resp) => {
-        return resp.json();
-      })
-      .then((data) => {
-        this.createMeal(data.meals[0]);
-      });
+    if (this.props.serverUrl) {
+      fetch(this.props.serverUrl)
+        .then((resp) => {
+          return resp.json();
+        })
+        .then((data) => {
+          this.createMeal(data.meals[0]);
+        })
+        .catch((e) => {
+          console.error(e);
+        });
+    } else {
+      console.error("Server Url is not set!");
+    }
   }
 
   createMeal(meal) {
