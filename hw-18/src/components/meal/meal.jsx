@@ -1,5 +1,5 @@
 import React from "react";
-import { renderMisc } from "./renderMisc";
+import { RenderMisc } from "./renderMisc";
 import { ingredientsList } from "./ingredientsList";
 import "./meal.scss";
 
@@ -34,9 +34,12 @@ export class Meal extends React.Component {
           <div className="meal__row">
             <div className="meal__column left">
               <img src={this.state.strMealThumb} alt={this.state.strMeal} />
-              {renderMisc("Category", this.state.strCategory)}
-              {renderMisc("Area", this.state.strArea)}
-              {renderMisc("Tags", this.state.strTags)}
+              <RenderMisc
+                miscName={"Category"}
+                value={this.state.strCategory}
+              />
+              <RenderMisc miscName={"Area"} value={this.state.strArea} />
+              <RenderMisc miscName={"Tags"} value={this.state.strTags} />
               <ul className="meal__ingredients">{this.state.strIngredients}</ul>
             </div>
             <div className="meal__column">
@@ -44,7 +47,11 @@ export class Meal extends React.Component {
               <p>{this.state.strInstructions}</p>
             </div>
           </div>
-          {renderMisc("strYoutube", this.state.strYoutube, this.state.strMeal)}
+          <RenderMisc
+            miscName={"strYoutube"}
+            value={this.state.strYoutube}
+            title={this.state.strMeal}
+          />
         </div>
       </div>
     );
