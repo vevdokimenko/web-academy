@@ -1,0 +1,21 @@
+.button {
+  width: 156px;
+  height: 45px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  display: inline-block;
+  &_label {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #292325;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  &:hover {
+    border-color: #292325;
+  }
+  transition: border-color 0.4s;
+}
