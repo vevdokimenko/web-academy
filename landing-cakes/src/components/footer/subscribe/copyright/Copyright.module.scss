@@ -1,0 +1,15 @@
+.wrapper {
+  background-color: var(--color-bg-peach);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 1.3rem;
+  margin: 21px 0;
+}
+
+.text a {
+  color: inherit;
+}

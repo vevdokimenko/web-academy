@@ -130,12 +130,12 @@ h1:first-line {
 .content-wrapper > .buttons-row > .store {
     border: none;
     background: #ffffff;
-    box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.0746433);
+    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.0746433);
     margin-bottom: 61px;
 }
 
 .content-wrapper > .buttons-row > .store:hover {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.0746433);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.0746433);
 }
 
 .buttons-row > .store
@@ -287,7 +287,7 @@ h1:first-line {
 .fourth-section .join-us .join-us-btn {
     width: 173px;
     background: linear-gradient(119.09deg, #FCEB6F 19.71%, #FEDE60 74.71%);
-    box-shadow: 0px 6px 9px rgba(244, 214, 58, 0.591401);
+    box-shadow: 0 6px 9px rgba(244, 214, 58, 0.591401);
     font-weight: 900;
     font-size: 24px;
     color: #FFFFFF;

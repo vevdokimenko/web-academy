@@ -41,7 +41,7 @@ body {
     height: 348px;
     margin: 126px auto;
     background: #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(63, 78, 90, 0.108667);
+    box-shadow: 0 0 10px rgba(63, 78, 90, 0.108667);
     border-radius: 2px;
     text-align: center;
     padding: 46px 50px;

@@ -1,0 +1,49 @@
+.container {
+  background-color: var(--color-bg-peach);
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.content {
+  display: grid;
+  grid-auto-rows: min-content;
+  width: 736px;
+  text-align: center;
+  justify-items: center;
+}
+
+.title {
+  margin-bottom: 35px;
+}
+
+.dash{
+  width: 33px;
+  height: 1px;
+  background-color: var(--color-black);
+  margin-bottom: 28px;
+}
+
+.subTitle {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.imageContainer {
+  width: 305px;
+  height: 305px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 63px 0;
+}
+
+.texts {
+  margin-bottom: 10px;
+}
+
+.text {
+  line-height: 2.25rem;
+  margin-bottom: 30px;
+}

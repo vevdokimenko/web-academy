@@ -1,5 +1,6 @@
+/*noinspection CssInvalidPropertyValue*/
 .hidden {
   opacity: 0;
-  visibility: 0;
+  visibility: hidden;
   height: 0;
 }

@@ -1,38 +1,4 @@
-.footerContent {
+.footer {
   width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.container {
-  width: 340px;
-  display: grid;
-  grid-template-rows: repeat(3, min-content) 2fr;
-  text-align: center;
-}
-
-.formItem {
-  height: auto;
-}
-
-.title {
-  color: rgb(41, 35, 37);
-  font-size: 1.6rem;
-  margin: 12px 0 41px 0;
-}
-
-.email {
-  width: 100%;
-  box-shadow: 0 0 0 2px #fff, 0 0 0 3px rgb(41, 35, 37);
-  font-size: 1.5rem;
-  padding: 3px 3px 3px 21px;
-  line-height: 21px;
-  &:hover {
-    box-shadow: 0 0 0 3px rgb(41, 35, 37);
-  }
-}
-
-.submitBtn {
-  width: 100%;
-  font-size: 1.6rem;
+  margin-top: 46px;
 }

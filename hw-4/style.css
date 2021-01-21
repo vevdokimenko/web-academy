@@ -97,7 +97,6 @@ body {
     border: 1px solid #ECECEC;
     border-radius: 3px;
     width: 66%;
-    font: inherit;
 }
 
 .email::placeholder {
@@ -112,7 +111,7 @@ body {
     cursor: pointer;
     width: 33%;
     position: absolute;
-    right: 0px;
+    right: 0;
     font-weight: bold;
     color: #FFFFFF;
 }

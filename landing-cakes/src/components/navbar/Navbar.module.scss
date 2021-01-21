@@ -5,6 +5,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: var(--color-white);
 }
 
 .content{
@@ -12,7 +13,7 @@
   width: var(--content-width);
   display: flex;
   justify-content: center;
-  border-bottom: 3px solid var(--color-link);
+  border-bottom: 3px solid var(--color-black);
   position: relative;
 }
 
@@ -35,11 +36,11 @@ nav {
 
 .linkItem {
   padding: 0 10px;
-  color: var(--color-link);
+  color: var(--color-black);
   line-height: 3.3rem;
   display: block;
   &:hover{
-    color:var(--active-color-link);
+    color:var(--color-grey);
     transition: color .4s;
   }
 }
