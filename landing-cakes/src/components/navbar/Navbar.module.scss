@@ -1,0 +1,45 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content{
+  min-width: 980px;
+  width: var(--content-width);
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid var(--color-link);
+  position: relative;
+}
+
+nav {
+  width: 652px;
+  margin-top: 31px;
+  margin-bottom: 23px;
+}
+
+.linkWrapper{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.link{
+  flex: auto;
+  text-align: center;
+}
+
+.linkItem {
+  padding: 0 10px;
+  color: var(--color-link);
+  line-height: 3.3rem;
+  display: block;
+  &:hover{
+    color:var(--active-color-link);
+    transition: color .4s;
+  }
+}

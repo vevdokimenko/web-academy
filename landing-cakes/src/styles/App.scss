@@ -1,3 +1,26 @@
+:root{
+  --color-link: rgb(41,35,37);
+  --active-color-link: rgb(153,141,143);
+  --test: 1px solid red;
+  --content-width: calc(100% - 80px - 80px);
+}
+
 .App {
   text-align: inherit;
+  width: 100%;
+}
+
+header, section {
+  min-width: 980px;
+  width: var(--content-width);
+  margin: 0 auto;
+}
+
+main {
+  margin-top: 90px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.2rem;
 }

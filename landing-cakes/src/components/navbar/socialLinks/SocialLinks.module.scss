@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-right: 80px;
+}
+
+.item {
+  width: 21px;
+  height: 21px;
+  object-fit: cover;
+  margin-right: 16px;
+  &:last-of-type {
+    margin: 0;
+  }
+}
