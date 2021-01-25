@@ -7,7 +7,7 @@ export const Footer = (props) => {
   return (
     <footer className={styles.footer}>
       <Subscribe url="testUrl" />
-      <Copyright author={props.author} createdBy={props.createdBy} />
+      <Copyright createdBy={props.createdBy} />
     </footer>
   );
 };

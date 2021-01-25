@@ -1,0 +1,59 @@
+@mixin border_hover{
+  box-shadow: 0 1px 0 0 var(--color-grey) ;
+  margin: 11px 0;
+  &:hover{
+    box-shadow: 0 3px 0 0 var(--color-grey) ;
+  }
+}
+
+.formWrapper {
+  width: 100%;
+}
+
+.form {
+  display: grid;
+  grid-template-areas:
+  'name email'
+  'txtarea txtarea'
+  'btn btn'
+  'info info';
+  grid-gap: 20px;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--color-black);
+  &_input {
+    padding: 3px 3px 3px 12px;
+    @include border_hover;
+  }
+  &_inputName {
+    grid-area: name;
+  }
+  &_inputEmail {
+    grid-area: email;
+  }
+  &_textArea {
+    grid-area: txtarea;
+    padding: 12px 3px 3px 12px;
+    height: 126px;
+    @include border_hover;
+  }
+  &_button {
+    grid-area: btn;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--color-grey);
+      transition: background-color .4s;
+    }
+  }
+}
+
+.info {
+  grid-area: info;
+  visibility: hidden;
+  opacity: 0;
+}

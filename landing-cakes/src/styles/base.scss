@@ -30,9 +30,11 @@ ol {
 }
 
 input,
-button {
+button,
+textarea{
   border: none;
   outline: none;
+  font: inherit;
 }
 
 a {

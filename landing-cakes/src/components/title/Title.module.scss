@@ -1,0 +1,16 @@
+.container {
+  background-color: var(--color-bg-peach);
+  display: grid;
+  grid-template-rows: min-content;
+  justify-content: center;
+  padding: 60px;
+  width: 100%;
+}
+
+.content {
+  display: grid;
+  grid-auto-rows: min-content;
+  width: 736px;
+  text-align: center;
+  justify-items: center;
+}

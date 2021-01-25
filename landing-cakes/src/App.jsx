@@ -1,15 +1,11 @@
 import React from "react";
 import "./styles/App.scss";
 import { Navbar } from "./components/navbar/Navbar";
+// noinspection ES6CheckImport
 import { HashRouter, Route } from "react-router-dom";
 import { About } from "./components/about/About";
 import { Footer } from "./components/footer/Footer";
-
-const author = {
-  firstName: "Hanna",
-  lastName: "Mason",
-  job: "Bakes",
-};
+import { Contact } from "./components/contact/Contact";
 
 const createdBy = {
   name: "Wix.com",
@@ -26,10 +22,11 @@ export const App = () => {
         <main>
           <section>
             <Route path="/" />
-            <Route path="/about" component={() => <About author={author} />} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
           </section>
         </main>
-        <Footer author={author} createdBy={createdBy} />
+        <Footer createdBy={createdBy} />
       </div>
     </HashRouter>
   );

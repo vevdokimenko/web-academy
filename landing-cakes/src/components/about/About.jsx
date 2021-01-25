@@ -1,16 +1,16 @@
 import React from "react";
 import styles from "./About.module.scss";
 import hanna from "./images/e1c78c_d5f27255657d452cb413ba28ef3bb976_mv2.webp";
+import { Title } from "../title/Title";
 
 export const About = (props) => {
   return (
-    <div className={styles.container}>
+    <div className="sectionContent">
+      <Title title="About Me" />
       <div className={styles.content}>
-        <h1 className={styles.title}>About Me</h1>
         <div className={styles.dash}>&nbsp;</div>
         <span className={styles.subTitle}>
-          {props.author.firstName} {props.author.lastName} - PASTRY CHEF, HOME
-          BAKER, BLOGGER
+          HANNA MASON - PASTRY CHEF, HOME BAKER, BLOGGER
         </span>
         <div className={styles.imageContainer}>
           <img src={hanna} alt="HANNA MASON" />
