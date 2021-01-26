@@ -1,7 +1,8 @@
-export const fetchData = (evt, url, el) => {
-  el.classList.add("show");
+export const fetchData = (evt, url, elementId) => {
+  const el = document.getElementById(elementId);
+  el.classList.remove("hide");
   setTimeout(() => {
-    el.classList.remove("show");
+    el.classList.add("hide");
   }, 1500);
 
   evt.preventDefault();

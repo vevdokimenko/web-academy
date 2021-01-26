@@ -3,11 +3,9 @@ import { fetchData } from "../../fetcherData/Fetcher";
 import styles from "./Subscribe.module.scss";
 
 export const Subscribe = (props) => {
-  const el = document.getElementsByClassName(styles.thanks);
-  console.log(el, props.url);
   return (
     <div className={styles.container}>
-      <form onSubmit={(e) => fetchData(e, props.url, el)}>
+      <form onSubmit={(e) => fetchData(e, props.url, styles.thanks)}>
         <div className={styles.content}>
           <div className={styles.formItem}>
             <h6 className={styles.title}>Subscribe to My Newsletter</h6>
@@ -27,7 +25,9 @@ export const Subscribe = (props) => {
             </button>
           </div>
           <div className={styles.formItem}>
-            <p className={styles.thanks + " hide"}>Thanks for submitting!</p>
+            <p id={styles.thanks} className="hide">
+              Thanks for submitting!
+            </p>
           </div>
         </div>
       </form>

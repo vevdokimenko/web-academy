@@ -1,6 +1,6 @@
-:root{
-  --color-black: rgb(41,35,37);
-  --color-grey: rgb(153,141,143);
+:root {
+  --color-black: rgb(41, 35, 37);
+  --color-grey: rgb(153, 141, 143);
   --color-white: #fff;
   --color-bg-peach: rgb(247, 233, 228);
   --test: 1px solid red;
@@ -12,7 +12,8 @@
   width: 100%;
 }
 
-header, section {
+header,
+section {
   min-width: 980px;
   width: var(--content-width);
   margin: 0 auto;
@@ -36,11 +37,10 @@ h1 {
 .show {
   visibility: visible;
   opacity: 1;
-  transition: opacity .4s;
+  transition: opacity 0.4s;
 }
 
 .hide {
-  visibility: hidden;
   opacity: 0;
-  transition: opacity .4s;
+  transition: opacity 0.4s;
 }
