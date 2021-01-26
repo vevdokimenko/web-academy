@@ -54,6 +54,9 @@
 
 .info {
   grid-area: info;
-  visibility: hidden;
-  opacity: 0;
+}
+
+.formId,
+.thanks {
+  position: relative;
 }

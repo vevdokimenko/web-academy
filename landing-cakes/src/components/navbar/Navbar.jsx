@@ -10,7 +10,7 @@ export const Navbar = () => {
         <nav>
           <ul className={styles.linkWrapper}>
             <li className={styles.link}>
-              <NavLink to="/" className={styles.linkItem}>
+              <NavLink to="/home" className={styles.linkItem}>
                 Home
               </NavLink>
             </li>

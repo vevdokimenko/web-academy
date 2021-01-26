@@ -1,10 +1,17 @@
+@import "base";
+
 :root {
   --color-black: rgb(41, 35, 37);
   --color-grey: rgb(153, 141, 143);
   --color-white: #fff;
   --color-bg-peach: rgb(247, 233, 228);
+  --color-bg-grey: rgb(235, 235, 242);
   --test: 1px solid red;
   --content-width: calc(100% - 80px - 80px);
+}
+
+body {
+  color: var(--color-black);
 }
 
 .App {
@@ -17,6 +24,19 @@ section {
   min-width: 980px;
   width: var(--content-width);
   margin: 0 auto;
+}
+
+header,
+section,
+footer {
+  animation: fadein ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
 }
 
 main {

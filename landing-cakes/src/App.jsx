@@ -6,6 +6,7 @@ import { HashRouter, Route } from "react-router-dom";
 import { About } from "./components/about/About";
 import { Footer } from "./components/footer/Footer";
 import { Contact } from "./components/contact/Contact";
+import { Home } from "./components/home/Home";
 
 const createdBy = {
   name: "Wix.com",
@@ -21,7 +22,7 @@ export const App = () => {
         </header>
         <main>
           <section>
-            <Route path="/" />
+            <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
           </section>

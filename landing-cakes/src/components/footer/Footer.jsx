@@ -6,7 +6,7 @@ import { Copyright } from "./subscribe/copyright/Copyright";
 export const Footer = (props) => {
   return (
     <footer className={styles.footer}>
-      <Subscribe url="testUrl" />
+      <Subscribe url="/" />
       <Copyright createdBy={props.createdBy} />
     </footer>
   );

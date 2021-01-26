@@ -1,5 +1,7 @@
-export const fetchData = (evt, url, elementId) => {
-  const el = document.getElementById(elementId);
+export const fetchData = (evt, url, formId, thnxId) => {
+  const el = document.getElementById(thnxId);
+  const form = document.getElementById(formId);
+
   el.classList.remove("hide");
   setTimeout(() => {
     el.classList.add("hide");
@@ -19,4 +21,5 @@ export const fetchData = (evt, url, elementId) => {
     .catch((e) => {
       console.error(e);
     });
+  form.reset();
 };

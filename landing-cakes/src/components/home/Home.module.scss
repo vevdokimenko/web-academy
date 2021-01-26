@@ -1,0 +1,99 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wrapper{
+  display: grid;
+  grid-gap: 20px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "palatino linotype", serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  letter-spacing: 0.425rem;
+  margin: 36px 0 12px 0;
+}
+
+.title2 {
+  font-size: 3.2rem;
+  line-height: 4.48rem;
+  width: 316px;
+  margin-bottom: 30px;
+}
+
+.sectionBanners {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bannerItem{
+  background-color: var(--color-bg-peach);
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  @include flex-center;
+}
+
+.itemTop {
+  width: calc(100%/3 - 10px);
+  height: 689px;
+}
+
+.itemBottom {
+  width: calc(50% - 10px);
+  height: 436px;
+}
+
+.bannerImage {
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.centralBanner{
+  position: relative;
+  height: 119px;
+  overflow: hidden;
+  background-color: var(--color-bg-grey);
+  @include flex-center;
+}
+
+.bgGrid {
+  position: absolute;
+  background-image: url("./images/grid.webp");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.15;
+  transform: translateZ(-10px);
+}
+
+.centralBannerTitle {
+  font-size: 2.2rem;
+  letter-spacing: 2.2px;
+  z-index: 1;
+}
+
+.buttonContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(-40%, -100%);
+}
