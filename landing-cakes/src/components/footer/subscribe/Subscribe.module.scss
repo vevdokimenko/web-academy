@@ -41,8 +41,12 @@
   font-weight: 700;
   cursor: pointer;
   height: 33px;
-  &:hover{
-    background-color: rgb(153,141,143);
-    transition: background-color .4s;
+  &:hover {
+    background-color: rgb(153, 141, 143);
+    transition: background-color 0.4s;
   }
+}
+
+#thanks {
+  position: relative;
 }
