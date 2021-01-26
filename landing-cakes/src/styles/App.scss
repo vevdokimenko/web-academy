@@ -26,19 +26,6 @@ section {
   margin: 0 auto;
 }
 
-header,
-section,
-footer {
-  animation: fadein ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadein {
-  from { opacity: 0}
-  to   { opacity: 1}
-}
-
 main {
   margin-top: 90px;
 }
