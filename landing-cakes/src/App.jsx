@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/App.scss";
 import { Navbar } from "./components/navbar/Navbar";
 // noinspection ES6CheckImport
-import { HashRouter, Route } from "react-router-dom";
+import { HashRouter, Redirect, Route } from "react-router-dom";
 import { About } from "./components/about/About";
 import { Footer } from "./components/footer/Footer";
 import { Contact } from "./components/contact/Contact";
@@ -22,6 +22,9 @@ export const App = () => {
         </header>
         <main>
           <section>
+            <Route path="/">
+              <Redirect from="/" to="/home" />
+            </Route>
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
