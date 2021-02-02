@@ -2,13 +2,12 @@ import React from "react";
 import styles from "./Slider.module.scss";
 
 export const SliderItem = (props) => {
-  const sliderFullShow = (index) => {
-    document.getElementById("SliderFull").classList.remove("hide");
-  };
-
   const item = props.images.map((image, index) => (
     <div className={styles.item} key={image}>
-      <button className={styles.itemLink} onClick={() => sliderFullShow(index)}>
+      <button
+        className={styles.itemLink}
+        onClick={() => props.sliderFullState(index, true)}
+      >
         <img
           src={process.env.PUBLIC_URL + image}
           alt={image}

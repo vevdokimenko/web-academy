@@ -49,7 +49,10 @@ export const Home = (props) => {
           </div>
         </div>
       </div>
-      <Slider images={props.home.sliderImages} />
+      <Slider
+        images={props.home.sliderImages}
+        socialIcons={props.home.socialIcons}
+      />
     </div>
   );
 };

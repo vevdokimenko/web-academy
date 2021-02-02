@@ -18,7 +18,7 @@ export const App = (props) => {
     <HashRouter>
       <div className="App">
         <header>
-          <Navbar />
+          <Navbar data={props.data.home.socialIcons} />
         </header>
         <main>
           <section>

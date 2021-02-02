@@ -20,6 +20,12 @@ export let data = {
       "/images/17.jpg",
       "/images/18.jpg",
     ],
+    socialIcons: {
+      fb: "/images/fb_icon.webp",
+      inst: "/images/instagram_icon.webp",
+      pin: "/images/pinterest_icon.webp",
+      tw: "/images/twitter_icon.webp",
+    },
   },
   about: [
     {

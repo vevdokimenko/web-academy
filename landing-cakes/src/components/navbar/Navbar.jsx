@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 import { SocialLinks } from "./socialLinks/SocialLinks";
 
-export const Navbar = () => {
+export const Navbar = (props) => {
   return (
     <div className={styles.header}>
       <div className={styles.content}>
@@ -32,7 +32,7 @@ export const Navbar = () => {
           </ul>
         </nav>
       </div>
-      <SocialLinks />
+      <SocialLinks data={props.data} />
     </div>
   );
 };
