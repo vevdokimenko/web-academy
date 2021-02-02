@@ -31,10 +31,15 @@ ol {
 
 input,
 button,
-textarea{
+textarea {
   border: none;
   outline: none;
   font: inherit;
+}
+
+button {
+  background: none;
+  padding: 0;
 }
 
 a {

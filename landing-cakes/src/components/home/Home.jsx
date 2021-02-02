@@ -7,11 +7,13 @@ import banner4 from "./images/banner4.webp";
 import { Button } from "../button/Button";
 import { Slider } from "./slider/Slider";
 
-export const Home = () => {
+export const Home = (props) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.titleContainer}>
-        <h1 className={styles.title}>HANNA BAKES.</h1>
+        <h1 className={styles.title}>
+          <a href="/">HANNA BAKES.</a>
+        </h1>
       </div>
       <div className={styles.sectionBanners}>
         <div className={`${styles.bannerItem} ${styles.itemTop}`}>
@@ -47,7 +49,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <Slider />
+      <Slider images={props.home.sliderImages} />
     </div>
   );
 };

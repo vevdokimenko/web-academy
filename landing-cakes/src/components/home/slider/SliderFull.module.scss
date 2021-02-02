@@ -1,0 +1,111 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  z-index: 10;
+  padding: 60px;
+  display: grid;
+  grid-template-rows: min-content;
+}
+
+.closeBtn {
+  width: 30px;
+  height: 30px;
+  justify-self: end;
+  position: relative;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  &:hover {
+    .cross {
+      min-height: 2px;
+    }
+  }
+}
+
+.cross {
+  width: calc(100% + 10px);
+  height: 100%;
+  max-height: 1px;
+  background-color: var(--color-black);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  &:last-child {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  min-width: 35px;
+  min-height: 70px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  z-index: 20;
+}
+.prevBtn {
+  left: 60px;
+  background-image: url("../images/l-arrow.png");
+}
+.nextBtn {
+  right: 60px;
+  background-image: url("../images/r-arrow.png");
+}
+
+.content {
+  display: grid;
+  grid-template: "img details";
+  grid-template-columns: min-content;
+  grid-template-rows: min-content;
+  align-self: center;
+  justify-self: center;
+  max-width: 990px;
+}
+
+.imgWrapper {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  grid-area: img;
+}
+
+.details {
+  grid-area: details;
+  display: flex;
+  flex-direction: column;
+  padding-left: 42px;
+}
+
+.userDetails {
+  border-bottom: 1px solid var(--color-bg-grey);
+  padding-bottom: 24px;
+}
+
+.userName {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  position: relative;
+}
+
+.userInst {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.userDescription {
+  margin: 25px 0;
+  color: var(--color-grey);
+}
