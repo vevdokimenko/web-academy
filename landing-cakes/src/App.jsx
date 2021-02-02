@@ -13,7 +13,7 @@ const createdBy = {
   link: "http://wix.com/?utm_campaign=vir_created_with",
 };
 
-export const App = () => {
+export const App = (props) => {
   return (
     <HashRouter>
       <div className="App">
@@ -25,7 +25,7 @@ export const App = () => {
             <Route path="/">
               <Redirect from="/" to="/home" />
             </Route>
-            <Route path="/home" component={Home} />
+            <Route path="/home" component={() => Home(props.data)} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
           </section>

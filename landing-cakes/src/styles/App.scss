@@ -40,6 +40,10 @@ h2 {
   text-align: center;
 }
 
+a {
+  color: var(--color-black);
+}
+
 .sectionContent {
   display: grid;
   grid-template-rows: min-content;
@@ -53,6 +57,7 @@ h2 {
 }
 
 .hide {
+  visibility: hidden;
   opacity: 0;
   transition: opacity 0.4s;
 }
