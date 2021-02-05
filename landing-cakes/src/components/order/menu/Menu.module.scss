@@ -1,0 +1,63 @@
+@mixin borderBottom {
+  border-bottom: 1px solid black;
+  border-color: rgba(41, 35, 37, 0.3);
+}
+
+@mixin menuBtn {
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+}
+
+.container {
+  position: relative;
+  font-size: 1.4rem;
+}
+
+.userInfo {
+  &Wrapper {
+    font-size: 1.6rem;
+    padding: 8px;
+    @include borderBottom;
+    @include menuBtn;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &Content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.avatar {
+  margin-left: 3px;
+  margin-right: 12px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.title {
+  display: block;
+  padding: 13px;
+  padding-left: 11px;
+  text-transform: uppercase;
+  @include borderBottom;
+  @include menuBtn;
+}
+
+.item {
+  padding: 13px 30px 13px 19px;
+  @include menuBtn;
+}
+
+.title:hover,
+.item:hover {
+  background: rgb(234, 233, 234);
+}
+
+.item.active {
+  box-shadow: inset 4px 0px rgba(41, 35, 37, 0.7);
+  background: rgb(234, 233, 234);
+}

@@ -1,9 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { App } from "./App";
-import { data } from "./data";
+import { data, subscribe, updateMenu } from "./data";
 
-ReactDOM.render(<App data={data} />, document.getElementById("root"));
+let rerenderEntireTree = () => {
+  ReactDOM.render(
+    <App data={data} updateMenu={updateMenu} />,
+    document.getElementById("root")
+  );
+};
+
+rerenderEntireTree(data);
+
+subscribe(rerenderEntireTree);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

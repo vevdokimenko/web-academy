@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./SliderFull.module.scss";
 
 export const SliderFull = (props) => {
-  console.log(props);
+  // console.log(props);
   return (
     <div className={`${styles.container} ${props.isActive ? "" : "hide"}`}>
       <button

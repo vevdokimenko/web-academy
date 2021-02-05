@@ -10,7 +10,7 @@ export const Navbar = (props) => {
         <nav>
           <ul className={styles.linkWrapper}>
             <li className={styles.link}>
-              <NavLink to="/home" className={styles.linkItem}>
+              <NavLink to="/" className={styles.linkItem}>
                 Home
               </NavLink>
             </li>

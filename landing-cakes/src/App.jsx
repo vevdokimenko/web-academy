@@ -2,11 +2,12 @@ import React from "react";
 import "./styles/App.scss";
 import { Navbar } from "./components/navbar/Navbar";
 // noinspection ES6CheckImport
-import { HashRouter, Redirect, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import { About } from "./components/about/About";
 import { Footer } from "./components/footer/Footer";
 import { Contact } from "./components/contact/Contact";
 import { Home } from "./components/home/Home";
+import { Order } from "./components/order/Order";
 
 const createdBy = {
   name: "Wix.com",
@@ -22,12 +23,16 @@ export const App = (props) => {
         </header>
         <main>
           <section>
-            <Route path="/">
-              <Redirect from="/" to="/home" />
-            </Route>
-            <Route path="/home" component={() => Home(props.data)} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
+            <Route exact path="/" component={() => Home(props.data)} />
+            <Route exact path="/about" component={About} />
+            <Route
+              exact
+              path="/order"
+              component={() => (
+                <Order order={props.data.order} updateMenu={props.updateMenu} />
+              )}
+            />
+            <Route exact path="/contact" component={Contact} />
           </section>
         </main>
         <Footer createdBy={createdBy} />
