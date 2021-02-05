@@ -7,13 +7,13 @@ export const subscribe = (observer) => {
 };
 
 export const updateMenu = (index) => {
-  console.log(index);
+  // console.log(index);
   let array = data.order.menu.submenu;
   array.forEach((element) => {
     element.active = false;
   });
   array[index].active = true;
-  // rerenderEntireTree();
+  rerenderEntireTree();
 };
 
 export let data = {
