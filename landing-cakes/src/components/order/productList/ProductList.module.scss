@@ -1,0 +1,61 @@
+@mixin title {
+  font-size: 2.4rem;
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+
+@mixin margins-l-r {
+  margin-left: calc((100% - 245px - 245px - 42px - 0.5px) / 2);
+  margin-right: calc((100% - 245px - 245px - 42px - 0.5px) / 2);
+}
+
+@mixin desc-font {
+  font-size: 1.5rem;
+  line-height: 1.28;
+}
+
+.container {
+  border-left: 1px solid rgba(41, 35, 37, 0.3);
+  border-right: 1px solid rgba(41, 35, 37, 0.3);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 13px;
+  padding-top: 29px;
+  @include margins-l-r;
+}
+
+.title {
+  @include title;
+  text-transform: uppercase;
+}
+
+.desc {
+  @include desc-font;
+  padding-bottom: 18px;
+  position: relative;
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 0;
+    border-bottom: 1px solid rgba(41, 35, 37, 0.3);
+  }
+}
+
+.subHeader {
+  text-align: center;
+  margin-bottom: 24px;
+  @include margins-l-r;
+}
+
+.subTitle {
+  @include title;
+}
+
+.subDesc {
+  @include desc-font;
+  padding-bottom: 24px;
+}

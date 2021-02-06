@@ -20,7 +20,7 @@ export const Menu = (props) => {
       </button>
       <button className={styles.title}>{props.menu.title}</button>
       <div>
-        <MenuItem submenu={props.menu.submenu} updateMenu={props.updateMenu} />
+        <MenuItem submenu={props.menu.submenu} functions={props.functions} />
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { App } from "./App";
-import { data, subscribe, updateMenu } from "./data";
+import { data, functions, subscribe } from "./data";
 
 let rerenderEntireTree = () => {
   ReactDOM.render(
-    <App data={data} updateMenu={updateMenu} />,
+    <App data={data} functions={functions} />,
     document.getElementById("root")
   );
 };

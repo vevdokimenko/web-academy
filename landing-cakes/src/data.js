@@ -6,7 +6,7 @@ export const subscribe = (observer) => {
   rerenderEntireTree = observer;
 };
 
-export const updateMenu = (index) => {
+const updateMenu = (index) => {
   // console.log(index);
   let array = data.order.menu.submenu;
   array.forEach((element) => {
@@ -14,6 +14,34 @@ export const updateMenu = (index) => {
   });
   array[index].active = true;
   rerenderEntireTree();
+};
+
+const setPreOrder = (item) => {
+  data.order.preOrder = item;
+  // console.log(item);
+  rerenderEntireTree();
+};
+
+const getPreOrder = () => {
+  return data.order.preOrder !== undefined ? data.order.preOrder : false;
+};
+
+const increaseValue = () => {
+  data.order.cart.quantity++;
+  rerenderEntireTree();
+};
+
+const decreaseValue = () => {
+  if (data.order.cart.quantity > 1) data.order.cart.quantity--;
+  rerenderEntireTree();
+};
+
+export const functions = {
+  updateMenu: updateMenu,
+  setPreOrder: setPreOrder,
+  getPreOrder: getPreOrder,
+  increaseValue: increaseValue,
+  decreaseValue: decreaseValue,
 };
 
 export let data = {
@@ -70,6 +98,7 @@ export let data = {
       avatar: process.env.PUBLIC_URL + "/images/avatar.svg",
       title: "Cakes Menu",
       description: "Served daily between 12-5pm",
+      preOrder: {},
       submenu: [
         {
           subTitle: "Wedding Cakes",
@@ -120,37 +149,37 @@ export let data = {
           active: false,
           items: [
             {
-              id: 1,
+              id: 7,
               title: "Macaroons Cake",
               price: 70,
               image: "/images/catalog/07.jpg",
             },
             {
-              id: 2,
+              id: 8,
               title: "Macaroons Chocolate Cake",
               price: 70,
               image: "/images/catalog/08.jpg",
             },
             {
-              id: 3,
+              id: 9,
               title: "Ice Cream Cone Cake",
               price: 70,
               image: "/images/catalog/09.jpg",
             },
             {
-              id: 4,
+              id: 10,
               title: "Crazy Donuts and Meringue Cake",
               price: 70,
               image: "/images/catalog/10.jpg",
             },
             {
-              id: 5,
+              id: 11,
               title: "Crazy Golden Chocolate Cake",
               price: 70,
               image: "/images/catalog/11.jpg",
             },
             {
-              id: 6,
+              id: 12,
               title: "Marble & Donuts Cake",
               price: 70,
               image: "/images/catalog/12.jpg",
@@ -159,5 +188,12 @@ export let data = {
         },
       ],
     },
+    cart: {
+      quantity: 1,
+      goods: [{}, 0],
+    },
+  },
+  infopane: {
+    closeBtn: "/images/close.svg",
   },
 };

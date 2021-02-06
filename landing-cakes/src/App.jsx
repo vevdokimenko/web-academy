@@ -8,6 +8,7 @@ import { Footer } from "./components/footer/Footer";
 import { Contact } from "./components/contact/Contact";
 import { Home } from "./components/home/Home";
 import { Order } from "./components/order/Order";
+import { Infopane } from "./components/order/productList/Infopane";
 
 const createdBy = {
   name: "Wix.com",
@@ -17,6 +18,12 @@ const createdBy = {
 export const App = (props) => {
   return (
     <HashRouter>
+      <Infopane
+        infopane={props.data.infopane}
+        item={props.functions.getPreOrder()}
+        order={props.data.order}
+        functions={props.functions}
+      />
       <div className="App">
         <header>
           <Navbar data={props.data.home.socialIcons} />
@@ -29,7 +36,7 @@ export const App = (props) => {
               exact
               path="/order"
               component={() => (
-                <Order order={props.data.order} updateMenu={props.updateMenu} />
+                <Order order={props.data.order} functions={props.functions} />
               )}
             />
             <Route exact path="/contact" component={Contact} />
