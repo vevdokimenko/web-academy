@@ -8,7 +8,7 @@ import { Footer } from "./components/footer/Footer";
 import { Contact } from "./components/contact/Contact";
 import { Home } from "./components/home/Home";
 import { Order } from "./components/order/Order";
-import { Infopane } from "./components/order/productList/Infopane";
+import { Infopane } from "./components/order/infopane/Infopane";
 
 const createdBy = {
   name: "Wix.com",

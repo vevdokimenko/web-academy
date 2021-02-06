@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  border-bottom: 1px solid rgba(41, 35, 37, 0.3);
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.28;
+}
+
+.itemsQuantity {
+  color: rgba(41, 35, 37, 0.8);
+  font-size: 1.4rem;
+}
+
+.itemsList {
+  max-height: 280px;
+  overflow-y: scroll;
+  padding-left: 10px;
+  position: relative;
+}
+
+.item {
+  padding: 18px;
+  padding-left: 0;
+  border-bottom: 1px solid rgba(41, 35, 37, 0.3);
+}
+
+.item span {
+  font-size: 1.2rem;
+}

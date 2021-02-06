@@ -48,7 +48,10 @@ export const Infopane = (props) => {
                   </button>
                 </div>
               </div>
-              <button className={styles.addBtn}>
+              <button
+                className={styles.addBtn}
+                onClick={() => props.functions.addToCart(props.item)}
+              >
                 <span>+</span> ADD TO MY ORDER
               </button>
             </div>

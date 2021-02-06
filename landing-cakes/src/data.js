@@ -36,12 +36,41 @@ const decreaseValue = () => {
   rerenderEntireTree();
 };
 
+const addToCart = (item) => {
+  debugger;
+  const addItem = (item) => {
+    const newItem = {
+      item: item,
+      quantity: data.order.cart.quantity,
+    };
+    data.order.cart.goods.push(newItem);
+  };
+
+  if (data.order.cart.goods.length === 0) {
+    addItem(item);
+  } else {
+    for (let i = 0; i < data.order.cart.goods.length; i++) {
+      if (data.order.cart.goods[i].item.id === item.id) {
+        data.order.cart.goods[i].quantity += data.order.cart.quantity;
+        break;
+      } else {
+        addItem(item);
+        break;
+      }
+    }
+  }
+
+  data.order.cart.quantity = 1;
+  setPreOrder();
+};
+
 export const functions = {
   updateMenu: updateMenu,
   setPreOrder: setPreOrder,
   getPreOrder: getPreOrder,
   increaseValue: increaseValue,
   decreaseValue: decreaseValue,
+  addToCart: addToCart,
 };
 
 export let data = {
@@ -190,7 +219,7 @@ export let data = {
     },
     cart: {
       quantity: 1,
-      goods: [{}, 0],
+      goods: [],
     },
   },
   infopane: {
